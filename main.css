@@ -1,0 +1,139 @@
+main{
+    background-color: rgb(161, 134, 204);
+    border-style: dashed;
+    border-radius: 5em;
+    margin: 10pt;
+}
+
+.start{
+    background-color: rgb(120, 157, 199);
+    margin:20pt;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 10pt;
+    font-size: larger;
+}
+
+.header{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+.navigation{
+    margin: 10pt;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5pt;
+    border-radius: 20em;
+    background-color: rgb(161, 134, 204);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.parts{
+    border-radius: 10px;
+    border-style: dotted;
+    padding: 10pt;
+    background-color: rgb(220, 220, 200);
+    display: flex;
+    margin: 20pt;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 5%;
+    width: 50%;
+    margin: 10pt;
+    align-self: center;
+}
+
+.contact{
+    font-size: larger;
+    border-radius: 5em;
+    border: 1px solid black;
+    padding: 10pt;
+    background-color: rgb(220, 220, 200);
+    margin: 20pt;
+    text-align: center;
+}
+
+
+.module{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blanchedalmond;
+    padding: 5pt;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+@media (max-width : 2200px) {
+    .navigation{
+        display: inline-block;
+    }
+
+}
+@media (max-width : 1750px) {
+    .module{
+        min-width: 500px;
+    }
+    .navigation{
+        display: inline-block;
+    }
+
+}
+
+@media (max-width : 1220px) {
+    .module{
+        min-width: 500px;
+        font-size: larger;
+    }
+    .navigation{
+        display: inline-block;
+    }
+
+    
+    
+}
+@media (max-width : 900px) {
+    .module{
+        min-width: 350px;
+        font-size: larger;
+    }
+    img {
+        border-radius: 5%;
+        width: 80%;
+        margin: 10pt;
+    }
+
+    .navigation{
+        min-width: 100px;
+        margin: 25pt;
+        display: block;
+    }
+}
+@media (max-width : 600px) {
+    .main{
+        border-radius: 3em;
+    }
+    .header{
+        text-align: center;
+    }
+
+    .module{
+        min-width: 240px;
+        font-size: large;
+    }
+    
+    img {
+        border-radius: 5em;
+        width: 80%;
+        margin: 10pt;
+        align-self: center;
+    }
+    .navigation{
+        min-width: 100px;
+        margin: 25pt;
+        display: block;
+
+    }
+}
