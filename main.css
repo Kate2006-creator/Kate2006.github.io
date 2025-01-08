@@ -1,11 +1,28 @@
-main{
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+main {
     background-color: rgb(161, 134, 204);
     border-style: dashed;
     border-radius: 5em;
     margin: 10pt;
+    padding: 10px;
 }
 
-.start{
+header {
+    text-align: center;
+}
+.header{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+
+.start {
     background-color: rgb(120, 157, 199);
     margin:20pt;
     border: 1px solid black;
@@ -14,12 +31,8 @@ main{
     font-size: larger;
 }
 
-.header{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    text-align: center;
-}
-.navigation{
+
+.navigation {
     margin: 10pt;
     display: inline-block;
     border: 2px solid black;
@@ -27,9 +40,11 @@ main{
     border-radius: 20em;
     background-color: rgb(161, 134, 204);
     font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+     color: black;
 }
 
-.parts{
+.parts {
     border-radius: 10px;
     border-style: dotted;
     padding: 10pt;
@@ -46,7 +61,7 @@ img {
     align-self: center;
 }
 
-.contact{
+.contact {
     font-size: larger;
     border-radius: 5em;
     border: 1px solid black;
@@ -55,7 +70,6 @@ img {
     margin: 20pt;
     text-align: center;
 }
-
 
 .module{
     display: flex;
@@ -70,8 +84,8 @@ img {
     .navigation{
         display: inline-block;
     }
-
 }
+
 @media (max-width : 1750px) {
     .module{
         min-width: 500px;
@@ -79,7 +93,6 @@ img {
     .navigation{
         display: inline-block;
     }
-
 }
 
 @media (max-width : 1220px) {
@@ -90,10 +103,8 @@ img {
     .navigation{
         display: inline-block;
     }
-
-    
-    
 }
+
 @media (max-width : 900px) {
     .module{
         min-width: 350px;
@@ -111,19 +122,22 @@ img {
         display: block;
     }
 }
+
 @media (max-width : 600px) {
-    .main{
+    main {
         border-radius: 3em;
     }
-    .header{
-        text-align: center;
+
+    .header {
+         text-align: center;
     }
+
 
     .module{
         min-width: 240px;
         font-size: large;
     }
-    
+
     img {
         border-radius: 5em;
         width: 80%;
@@ -134,6 +148,5 @@ img {
         min-width: 100px;
         margin: 25pt;
         display: block;
-
     }
 }
